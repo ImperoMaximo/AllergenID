@@ -1,0 +1,248 @@
+/* Reset de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo h2 {
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    text-decoration: none !important; /* Force la suppression */
+}
+/* Styles généraux */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+#website-header {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid #000000;
+    padding-bottom: 15px; /* Conserve votre padding existant */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #CE5A07;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #b34c06;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+#hero {
+    background-color: #F4FAF7;
+    text-align: left; /* Changé de center à left */
+}
+
+.hero-content {
+    max-width: 1200px; /* Augmenté de 800px à 1200px */
+    margin: 0 auto;
+    display: flex; /* Ajout */
+    align-items: center; /* Ajout */
+    gap: 50px; /* Ajout */
+}
+
+/* Nouveaux styles pour l'image */
+.hero-image-container {
+    flex: 1;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-text-content {
+    flex: 1;
+}
+
+.hero-split-container {
+    display: flex;
+    height: 100%;
+    min-height: 500px; /* Hauteur minimale de la section */
+}
+
+.hero-image-half {
+    flex: 0 0 50%;
+    background: #f0f0f0; /* Fond de secours */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text-half {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hero-adaptive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#solutions {
+    padding: 80px 0;
+    background-color: #ffffff; /* Adaptez la couleur selon vos besoins */
+}
+
+.solutions-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solutions-text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.solutions-image {
+    flex: 1;
+}
+
+.solutions-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#produits {
+    background-color: #F2F0D9;
+    padding: 80px 0;
+}
+
+#produits .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#produits h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.produits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+    gap: 20px; /* Espacement réduit */
+}
+
+.produit-card {
+    background: #FFFFFF;
+    color: #333;
+    padding: 30px 20px; /* Padding ajusté */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.produit-card:hover {
+    transform: translateY(-5px);
+}
+
+.produit-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem; /* Taille de police réduite */
+    color: #CE5A07;
+}
+
+.produit-card p {
+    font-size: 0.9rem; /* Taille de police réduite */
+    line-height: 1.5;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+section {
+    border-bottom: 4px solid #000000;
+    padding-bottom: 80px; /* Conserve votre padding existant */
+}
+
+/* Pour supprimer la bordure après la dernière section */
+footer {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
